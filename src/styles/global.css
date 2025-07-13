@@ -1,1 +1,21 @@
 @import "tailwindcss";
+
+@font-face {
+    font-family: 'Inter-fallback';
+    size-adjust: 107.00%;
+    ascent-override: 91%;
+    src: local("Arial");
+}
+
+
+@theme {
+    --font-sans: 'Inter Variable', 'Inter-fallback', 'sans-serif';
+    --color-card: hsla(0, 0%, 100%, 1);
+    --color-main: hsla(0, 0%, 7%, 1);
+    --color-foreground: hsla(0, 0%, 100%, 1);
+    --color-foreground-inverted: hsla(0, 0%, 0%, 1);
+    --color-foreground-soft: hsla(0, 0%, 100%, 0.5);
+    --color-foreground-soft-inverted: hsla(0, 0%, 0%, 0.5);
+    --color-primary: hsla(240, 100%, 63%, 1);
+    --radius-card: 1.25rem;
+}
