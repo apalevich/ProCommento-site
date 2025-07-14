@@ -1,17 +1,29 @@
 ---
-import LogoIcon from "../assets/logo.svg";
+import LogoIcon from "../assets/Logo.svg";
 ---
 
 <div class="flex items-center gap-2">
     <div class="w-20 h-20 relative sm:hidden">
-        {/* Shadow is baked in into the svg so it works normally with squircle and the exported svg size takes some of the extra space to have shadow, hence these weird tricks for the size, */}
-        <img src={LogoIcon.src} alt="" class="w-[217.63px] h-[217.63px] absolute -translate-y-[35px] object-cover" />
+        {
+            /* Shadow is baked in into the svg so it works normally with squircle and the exported svg size takes some of the extra space to have shadow, hence these weird tricks for the size, */
+        }
+        <img
+            src={LogoIcon.src}
+            alt=""
+            class="w-[217.63px] h-[217.63px] absolute -translate-y-[35px] object-cover"
+        />
     </div>
     <div class="hidden sm:block w-12 h-12 relative">
-        {/* Shadow is baked in into the svg so it works normally with squircle and the exported svg size takes some of the extra space to have shadow, hence these weird tricks for the size, */}
-        <img src={LogoIcon.src} alt="" class="w-[146px] h-[146px] absolute -translate-y-[26px] object-cover" />
+        {
+            /* Shadow is baked in into the svg so it works normally with squircle and the exported svg size takes some of the extra space to have shadow, hence these weird tricks for the size, */
+        }
+        <img
+            src={LogoIcon.src}
+            alt=""
+            class="w-[146px] h-[146px] absolute -translate-y-[26px] object-cover"
+        />
     </div>
-    <div class="hidden sm:block text-foreground text-2xl font-semibold">ProCommento</div>
+    <div class="hidden sm:block text-foreground text-2xl font-semibold">
+        ProCommento
+    </div>
 </div>
-
-
