@@ -242,7 +242,6 @@ import Logo from "./Logo.astro";
 
     const cardObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
-            console.log(entry);
             if (entry.isIntersecting) {
                 head?.classList.remove('wide');
                 tail?.classList.add('is-visible');
