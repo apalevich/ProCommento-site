@@ -4,38 +4,63 @@ import Logo from "./Logo.astro";
 
 <div id="container" class="root h-full text-foreground overflow-auto">
     <div class="h-full relative sm:overflow-hidden sm:min-h-fit">
-        <main class="flex flex-col sm:items-center h-full relative max-sm:px-4 sm:max-h-[var(--max-height)] sm:min-h-fit">
-            <header class="header py-6 sm:py-8 sm:px-20 flex items-center justify-between w-full relative">
-                <Logo/>
-                <div class="hidden sm:block text-foreground-soft text-2xl">Stay tuned on <a href="https://www.linkedin.com/company/procommento/?viewAsMember=true" target="_blank"
-                                                                                            class="text-primary underline ">LinkedIn</a>
+        <main
+            class="flex flex-col sm:items-center h-full relative max-sm:px-4 sm:max-h-[var(--max-height)] sm:min-h-fit"
+        >
+            <header
+                class="header py-6 sm:py-8 sm:px-20 flex items-center justify-between w-full relative"
+            >
+                <Logo />
+                <div class="hidden sm:block text-foreground-soft text-2xl">
+                    Stay tuned on <a
+                        href="https://www.linkedin.com/company/procommento/?viewAsMember=true"
+                        target="_blank"
+                        class="text-primary underline">LinkedIn</a
+                    >
                 </div>
             </header>
-            <div class="title flex flex-col sm:items-center gap-4 max-w-[550px] sm:text-center sm:mt-[7vh] relative z-10">
-                <h1 class="leading-tight text-[2rem] sm:text-5xl font-black">Your LinkedIn <br>comments CRM</h1>
-                <p class="text-xl sm:text-2xl">Turn comments into clients. Spark conversations and grow your audience
-                    without posting
-                    daily</p>
+            <div
+                class="title flex flex-col sm:items-center gap-4 max-w-[550px] sm:text-center sm:mt-[7vh] relative z-10"
+            >
+                <h1 class="leading-tight text-[2rem] sm:text-5xl font-black">
+                    Your LinkedIn <br />comments CRM
+                </h1>
+                <p class="text-xl sm:text-2xl">
+                    Turn comments into clients. Spark conversations and grow
+                    your audience without posting daily
+                </p>
             </div>
-            <div class="cards flex items-stretch sm:items-center gap-4 sm:gap-0 justify-center mt-4 sm:mt-8 flex-col sm:flex-row sm:py-10 sm:overflow-hidden sm:z-10 w-full shrink-0 z-10"
-                 id="cards">
-                <div class="text-xl sm:w-[268px] gap-3 flex flex-col bg-card text-foreground-inverted rounded-card p-6 sm:rotate-[11.17deg] card-shadow shrink-0">
+            <div
+                class="cards flex items-stretch sm:items-center gap-4 sm:gap-0 justify-center mt-4 sm:mt-8 flex-col sm:flex-row sm:py-10 sm:overflow-hidden sm:z-10 w-full shrink-0 z-10"
+                id="cards"
+            >
+                <div
+                    class="text-xl sm:w-[268px] gap-3 flex flex-col bg-card text-foreground-inverted rounded-card p-6 sm:rotate-[11.17deg] card-shadow shrink-0"
+                >
                     <div class="text-3xl">🤡</div>
                     <div>
-                        <p class="font-bold">No more “well done!” and “good job!”</p>
-                        <p class="text-foreground-soft-inverted text-xl">You know it never worked anyway</p>
+                        <p class="font-bold">
+                            No more “well done!” and “good job!”
+                        </p>
+                        <p class="text-foreground-soft-inverted text-xl">
+                            You know it never worked anyway
+                        </p>
                     </div>
                 </div>
-                <div class="text-xl sm:w-[268px] gap-3 flex flex-col bg-card text-foreground-inverted rounded-card p-6 sm:rotate-[-12.56deg] card-shadow shrink-0">
+                <div
+                    class="text-xl sm:w-[268px] gap-3 flex flex-col bg-card text-foreground-inverted rounded-card p-6 sm:rotate-[-12.56deg] card-shadow shrink-0"
+                >
                     <div class="text-3xl">😎</div>
                     <div>
                         <p class="font-bold">Comment like a Pro</p>
-                        <p class="text-foreground-soft-inverted text-xl">With AI generator tailored to your profile</p>
+                        <p class="text-foreground-soft-inverted text-xl">
+                            With AI generator tailored to your profile
+                        </p>
                     </div>
-
-
                 </div>
-                <div class="text-xl sm:w-[268px] gap-3 flex flex-col bg-card text-foreground-inverted rounded-card p-6 sm:rotate-[9.49deg] card-shadow shrink-0">
+                <div
+                    class="text-xl sm:w-[268px] gap-3 flex flex-col bg-card text-foreground-inverted rounded-card p-6 sm:rotate-[9.49deg] card-shadow shrink-0"
+                >
                     <div class="text-3xl">📊</div>
                     <div>
                         <p class="font-bold">Keep track of things</p>
@@ -44,130 +69,264 @@ import Logo from "./Logo.astro";
                         </p>
                     </div>
                 </div>
-                <div class="text-xl sm:w-[268px] gap-3 flex flex-col rounded-card p-6 sm:rotate-[-12.49deg] relative shrink-0"
-                     id="last-card">
-                    <div class="flex items-center justify-between text-3xl">🚀<span
-                            class="text-foreground-soft text-xl">soon</span></div>
+                <div
+                    class="text-xl sm:w-[268px] gap-3 flex flex-col rounded-card p-6 sm:rotate-[-12.49deg] relative shrink-0"
+                    id="last-card"
+                >
+                    <div class="flex items-center justify-between text-3xl">
+                        🚀<span class="text-foreground-soft text-xl">soon</span>
+                    </div>
                     <div>
                         <p class="font-bold">Scale growth</p>
-                        <p class="text-foreground-soft text-xl">With autoposting agent that never sleeps</p>
+                        <p class="text-foreground-soft text-xl">
+                            With autoposting agent that never sleeps
+                        </p>
                     </div>
                     <svg
-                            viewBox="0 0 300 233"
-                            class="absolute left-0 top-0 w-full h-full"
-                            preserveAspectRatio="none"
+                        viewBox="0 0 300 233"
+                        class="absolute left-0 top-0 w-full h-full"
+                        preserveAspectRatio="none"
                     >
                         <rect
-                                x="1"
-                                y="1"
-                                width="298"
-                                height="231"
-                                rx="20"
-                                ry="20"
-                                class="fill-none stroke-foreground-soft"
-                                stroke-width="1"
-                                stroke-dasharray="8 8"
-                                vector-effect='non-scaling-stroke'
-                        />
+                            x="1"
+                            y="1"
+                            width="298"
+                            height="231"
+                            rx="20"
+                            ry="20"
+                            class="fill-none stroke-foreground-soft"
+                            stroke-width="1"
+                            stroke-dasharray="8 8"
+                            vector-effect="non-scaling-stroke"></rect>
                     </svg>
                 </div>
             </div>
-            <div class="sticky max-sm:bottom-10 max-sm:w-[calc(100%+var(--spacing)*8)] max-sm:mt-32 max-sm:-mx-4 sm:w-full sm:block sm:relative sm:pb-18 sm:mt-auto z-20">
-                <div class="bg-[#5362F6] w-[280px] h-[180px] left-1/2 top-1/2 sm:top-1/3 -translate-1/2 absolute blur-xl sm:blur-2xl rounded-full"></div>
+            <div
+                class="sticky max-sm:bottom-10 max-sm:w-[calc(100%+var(--spacing)*8)] max-sm:mt-32 max-sm:-mx-4 sm:w-full sm:block sm:relative sm:pb-18 sm:mt-auto z-20"
+            >
+                <div
+                    class="bg-[#5362F6] w-[280px] h-[180px] left-1/2 top-1/2 sm:top-1/3 -translate-1/2 absolute blur-xl sm:blur-2xl rounded-full"
+                >
+                </div>
                 <picture
-                        class="absolute -bottom-[240px] sm:-bottom-[180px] left-0 right-0 w-full h-[680px] pointer-events-none z-0 overflow-hidden">
-                    <source srcset="/Head@2x.avif" type="image/avif"/>
-                    <source srcset="/Head@2x.webp" type="image/webp"/>
-                    <source srcset="/Head@2x.png" type="image/png"/>
-                    <img src="/Head@2x.avif" alt=""
-                         id="head"
-                         class="wide absolute max-w-none w-[600px] bottom-0 left-1/2 -translate-x-1/2"/>
+                    class="absolute -bottom-[240px] sm:-bottom-[180px] left-0 right-0 w-full h-[680px] pointer-events-none z-0 overflow-hidden"
+                >
+                    <source srcset="/Head@2x.avif" type="image/avif" />
+                    <source srcset="/Head@2x.webp" type="image/webp" />
+                    <source srcset="/Head@2x.png" type="image/png" />
+                    <img
+                        src="/Head@2x.avif"
+                        alt=""
+                        id="head"
+                        class="wide absolute max-w-none w-[600px] bottom-0 left-1/2 -translate-x-1/2"
+                    />
                 </picture>
-                <a href="https://procommen.to" target="_blank"
-                   class="flex flex-col items-center gap-4 max-w-[230px] text-center mx-auto relative app-link z-10">
-                    <span class="text-2xl font-extrabold relative">Try now</span>
-                    <span class="text-xl relative">2 day trial, no credit card required</span>
+                <a
+                    href="https://procommen.to"
+                    target="_blank"
+                    id="linkToApp"
+                    class="flex flex-col items-center gap-4 max-w-[230px] text-center mx-auto relative app-link z-10"
+                >
+                    <span class="text-2xl font-extrabold relative">Try now</span
+                    >
+                    <span class="text-xl relative"
+                        >2 day trial, no credit card required</span
+                    >
                 </a>
-                <div class="max-sm:hidden z-0 w-[180px] h-[180px] left-1/2 top-1/2 sm:top-1/3 -translate-1/2 absolute blur-xl sm:blur-2xl rounded-full head-hover-gradient"></div>
+                <div
+                    class="max-sm:hidden z-0 w-[180px] h-[180px] left-1/2 top-1/2 sm:top-1/3 -translate-1/2 absolute blur-xl sm:blur-2xl rounded-full head-hover-gradient"
+                >
+                </div>
             </div>
             <div class="w-full z-0 relative pointer-events-none">
-                <div class="absolute h-[clamp(var(--min-height),100vh,var(--max-height))] bottom-0 w-full overflow-hidden"
-                     id="tail">
-                    <svg class="relative h-full w-[600px] left-1/2 -translate-x-1/2"
-                         viewBox="0 500 589 972"
-                         preserveAspectRatio="none"
-                         xmlns="http://www.w3.org/2000/svg">
+                <div
+                    class="absolute h-[clamp(var(--min-height),100vh,var(--max-height))] bottom-0 w-full overflow-hidden"
+                    id="tail"
+                >
+                    <svg
+                        class="relative h-full w-[600px] left-1/2 -translate-x-1/2"
+                        viewBox="0 500 589 972"
+                        preserveAspectRatio="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
                         <g filter="url(#filter0_f_26_8)">
-                            <path d="M274.503 110.826C276.714 96.4837 297.331 96.3529 299.724 110.666L489 1242.93H100L274.503 110.826Z"
-                                  fill="url(#paint0_linear_26_8)"/>
+                            <path
+                                d="M274.503 110.826C276.714 96.4837 297.331 96.3529 299.724 110.666L489 1242.93H100L274.503 110.826Z"
+                                fill="url(#paint0_linear_26_8)"></path>
                         </g>
                         <g filter="url(#filter1_f_26_8)">
-                            <path d="M278.634 534.392C280.327 523.407 296.118 523.307 297.95 534.27L442.919 1401.48H144.98L278.634 534.392Z"
-                                  fill="url(#paint1_linear_26_8)"/>
+                            <path
+                                d="M278.634 534.392C280.327 523.407 296.118 523.307 297.95 534.27L442.919 1401.48H144.98L278.634 534.392Z"
+                                fill="url(#paint1_linear_26_8)"></path>
                         </g>
                         <g filter="url(#filter2_fn_26_8)">
-                            <path d="M285.777 581.323C286.485 572.523 299.36 572.479 300.127 581.274L364.96 1324.92H226L285.777 581.323Z"
-                                  fill="url(#paint2_linear_26_8)"/>
+                            <path
+                                d="M285.777 581.323C286.485 572.523 299.36 572.479 300.127 581.274L364.96 1324.92H226L285.777 581.323Z"
+                                fill="url(#paint2_linear_26_8)"></path>
                         </g>
                         <defs>
-                            <filter id="filter0_f_26_8" x="0" y="0" width="589" height="1342.93"
-                                    filterUnits="userSpaceOnUse"
-                                    color-interpolation-filters="sRGB">
-                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                                <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_26_8"/>
+                            <filter
+                                id="filter0_f_26_8"
+                                x="0"
+                                y="0"
+                                width="589"
+                                height="1342.93"
+                                filterUnits="userSpaceOnUse"
+                                color-interpolation-filters="sRGB"
+                            >
+                                <feFlood
+                                    flood-opacity="0"
+                                    result="BackgroundImageFix"></feFlood>
+                                <feBlend
+                                    mode="normal"
+                                    in="SourceGraphic"
+                                    in2="BackgroundImageFix"
+                                    result="shape"></feBlend>
+                                <feGaussianBlur
+                                    stdDeviation="50"
+                                    result="effect1_foregroundBlur_26_8"
+                                ></feGaussianBlur>
                             </filter>
-                            <filter id="filter1_f_26_8" x="74.9805" y="456.101" width="437.938" height="1015.38"
-                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                                <feGaussianBlur stdDeviation="35" result="effect1_foregroundBlur_26_8"/>
+                            <filter
+                                id="filter1_f_26_8"
+                                x="74.9805"
+                                y="456.101"
+                                width="437.938"
+                                height="1015.38"
+                                filterUnits="userSpaceOnUse"
+                                color-interpolation-filters="sRGB"
+                            >
+                                <feFlood
+                                    flood-opacity="0"
+                                    result="BackgroundImageFix"></feFlood>
+                                <feBlend
+                                    mode="normal"
+                                    in="SourceGraphic"
+                                    in2="BackgroundImageFix"
+                                    result="shape"></feBlend>
+                                <feGaussianBlur
+                                    stdDeviation="35"
+                                    result="effect1_foregroundBlur_26_8"
+                                ></feGaussianBlur>
                             </filter>
-                            <filter id="filter2_fn_26_8" x="126" y="474.7" width="338.96" height="950.215"
-                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                                <feGaussianBlur stdDeviation="35" result="effect1_foregroundBlur_26_8"/>
-                                <feTurbulence type="fractalNoise" baseFrequency="1.6858237981796265 1.6858237981796265"
-                                              stitchTiles="stitch" numOctaves="3" result="noise" seed="4461"/>
-                                <feColorMatrix in="noise" type="luminanceToAlpha" result="alphaNoise"/>
-                                <feComponentTransfer in="alphaNoise" result="coloredNoise1">
-                                    <feFuncA type="discrete"
-                                             tableValues="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 "/>
+                            <filter
+                                id="filter2_fn_26_8"
+                                x="126"
+                                y="474.7"
+                                width="338.96"
+                                height="950.215"
+                                filterUnits="userSpaceOnUse"
+                                color-interpolation-filters="sRGB"
+                            >
+                                <feFlood
+                                    flood-opacity="0"
+                                    result="BackgroundImageFix"></feFlood>
+                                <feBlend
+                                    mode="normal"
+                                    in="SourceGraphic"
+                                    in2="BackgroundImageFix"
+                                    result="shape"></feBlend>
+                                <feGaussianBlur
+                                    stdDeviation="35"
+                                    result="effect1_foregroundBlur_26_8"
+                                ></feGaussianBlur>
+                                <feTurbulence
+                                    type="fractalNoise"
+                                    baseFrequency="1.6858237981796265 1.6858237981796265"
+                                    stitchTiles="stitch"
+                                    numOctaves="3"
+                                    result="noise"
+                                    seed="4461"></feTurbulence>
+                                <feColorMatrix
+                                    in="noise"
+                                    type="luminanceToAlpha"
+                                    result="alphaNoise"></feColorMatrix>
+                                <feComponentTransfer
+                                    in="alphaNoise"
+                                    result="coloredNoise1"
+                                >
+                                    <feFuncA
+                                        type="discrete"
+                                        tableValues="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 "
+                                    ></feFuncA>
                                 </feComponentTransfer>
-                                <feComposite operator="in" in2="effect1_foregroundBlur_26_8" in="coloredNoise1"
-                                             result="noise1Clipped"/>
-                                <feFlood flood-color="rgba(0, 0, 0, 0.25)" result="color1Flood"/>
-                                <feComposite operator="in" in2="noise1Clipped" in="color1Flood" result="color1"/>
+                                <feComposite
+                                    operator="in"
+                                    in2="effect1_foregroundBlur_26_8"
+                                    in="coloredNoise1"
+                                    result="noise1Clipped"></feComposite>
+                                <feFlood
+                                    flood-color="rgba(0, 0, 0, 0.25)"
+                                    result="color1Flood"></feFlood>
+                                <feComposite
+                                    operator="in"
+                                    in2="noise1Clipped"
+                                    in="color1Flood"
+                                    result="color1"></feComposite>
                                 <feMerge result="effect2_noise_26_8">
-                                    <feMergeNode in="effect1_foregroundBlur_26_8"/>
-                                    <feMergeNode in="color1"/>
+                                    <feMergeNode
+                                        in="effect1_foregroundBlur_26_8"
+                                    ></feMergeNode>
+                                    <feMergeNode in="color1"></feMergeNode>
                                 </feMerge>
                             </filter>
-                            <linearGradient id="paint0_linear_26_8" x1="294.5" y1="100" x2="294.5" y2="1242.93"
-                                            gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#3639CC" stop-opacity="0"/>
-                                <stop offset="1" stop-color="#3639CC" stop-opacity="0.4"/>
+                            <linearGradient
+                                id="paint0_linear_26_8"
+                                x1="294.5"
+                                y1="100"
+                                x2="294.5"
+                                y2="1242.93"
+                                gradientUnits="userSpaceOnUse"
+                            >
+                                <stop stop-color="#3639CC" stop-opacity="0"
+                                ></stop>
+                                <stop
+                                    offset="1"
+                                    stop-color="#3639CC"
+                                    stop-opacity="0.4"></stop>
                             </linearGradient>
-                            <linearGradient id="paint1_linear_26_8" x1="293.95" y1="526.101" x2="293.95" y2="1401.48"
-                                            gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#3652CC" stop-opacity="0"/>
-                                <stop offset="0.8" stop-color="#3652CC" stop-opacity="0.3"/>
-                                <stop offset="1" stop-color="#3652CC"/>
+                            <linearGradient
+                                id="paint1_linear_26_8"
+                                x1="293.95"
+                                y1="526.101"
+                                x2="293.95"
+                                y2="1401.48"
+                                gradientUnits="userSpaceOnUse"
+                            >
+                                <stop stop-color="#3652CC" stop-opacity="0"
+                                ></stop>
+                                <stop
+                                    offset="0.8"
+                                    stop-color="#3652CC"
+                                    stop-opacity="0.3"></stop>
+                                <stop offset="1" stop-color="#3652CC"></stop>
                             </linearGradient>
-                            <linearGradient id="paint2_linear_26_8" x1="295.48" y1="574.7" x2="295.48" y2="1324.92"
-                                            gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#3F7DE2" stop-opacity="0"/>
-                                <stop offset="0.5" stop-color="#3F7DE2" stop-opacity="0.6"/>
-                                <stop offset="1" stop-color="#3F7DE2"/>
+                            <linearGradient
+                                id="paint2_linear_26_8"
+                                x1="295.48"
+                                y1="574.7"
+                                x2="295.48"
+                                y2="1324.92"
+                                gradientUnits="userSpaceOnUse"
+                            >
+                                <stop stop-color="#3F7DE2" stop-opacity="0"
+                                ></stop>
+                                <stop
+                                    offset="0.5"
+                                    stop-color="#3F7DE2"
+                                    stop-opacity="0.6"></stop>
+                                <stop offset="1" stop-color="#3F7DE2"></stop>
                             </linearGradient>
                         </defs>
                     </svg>
                 </div>
             </div>
-            <div class="sm:hidden text-foreground-soft text-2xl pb-10 pt-32 relative text-center">Stay tuned on <a
-                    href="#"
-                    class="text-primary underline ">LinkedIn</a>
+            <div
+                class="sm:hidden text-foreground-soft text-2xl pb-10 pt-32 relative text-center"
+            >
+                Stay tuned on <a href="#" class="text-primary underline"
+                    >LinkedIn</a
+                >
             </div>
         </main>
     </div>
@@ -194,7 +353,7 @@ import Logo from "./Logo.astro";
     }
 
     .head-hover-gradient {
-        background: radial-gradient(#2E2EFF 37%, rgba(67, 67, 255, 0) 100%);
+        background: radial-gradient(#2e2eff 37%, rgba(67, 67, 255, 0) 100%);
         opacity: 0;
         transition: opacity 0.2s ease-in;
     }
@@ -204,7 +363,9 @@ import Logo from "./Logo.astro";
     }
 
     .card-shadow {
-        box-shadow: 0px 6.39px 10.02px 0px hsla(0, 0%, 0%, 0.04), 0px 15.38px 24.12px 0px hsla(0, 0%, 0%, 0.05);
+        box-shadow:
+            0px 6.39px 10.02px 0px hsla(0, 0%, 0%, 0.04),
+            0px 15.38px 24.12px 0px hsla(0, 0%, 0%, 0.05);
     }
 
     #head {
@@ -236,27 +397,34 @@ import Logo from "./Logo.astro";
 </style>
 
 <script>
-    const card = document.querySelector('#last-card');
-    const head = document.querySelector('#head');
-    const tail = document.querySelector('#tail');
+    const card = document.querySelector("#last-card");
+    const head = document.querySelector("#head");
+    const tail = document.querySelector("#tail");
 
-    const cardObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                head?.classList.remove('wide');
-                tail?.classList.add('is-visible');
-            } else {
-                head?.classList.add('wide');
-                tail?.classList.remove('is-visible');
-            }
-        });
-    }, {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50% 0px'
-    });
+    const cardObserver = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    head?.classList.remove("wide");
+                    tail?.classList.add("is-visible");
+                } else {
+                    head?.classList.add("wide");
+                    tail?.classList.remove("is-visible");
+                }
+            });
+        },
+        {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50% 0px",
+        },
+    );
 
     if (card) {
         cardObserver.observe(card);
     }
-</script>
 
+    // UTM transporter
+    var url = new URL(document.location.href);
+    var urlParams = url.search;
+    document.getElementById("linkToApp").href += urlParams;
+</script>
