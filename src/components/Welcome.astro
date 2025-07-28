@@ -424,7 +424,11 @@ import Logo from "./Logo.astro";
     }
 
     // UTM transporter
-    var url = new URL(document.location.href);
-    var urlParams = url.search;
-    document.getElementById("linkToApp").href += urlParams;
+    const url = new URL(document.location.href);
+    const urlParams = url.search;
+    const linkToApp: HTMLLinkElement | null =
+        document.querySelector("a#linkToApp");
+    if (linkToApp) {
+        linkToApp.href += urlParams;
+    }
 </script>
