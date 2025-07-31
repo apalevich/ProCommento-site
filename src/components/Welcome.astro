@@ -31,7 +31,7 @@ import Logo from "./Logo.astro";
                 </p>
             </div>
             <div
-                class="cards flex items-stretch sm:items-center gap-4 sm:gap-0 justify-center mt-4 sm:mt-8 flex-col sm:flex-row sm:py-10 sm:overflow-hidden sm:z-10 w-full shrink-0 z-10"
+                class="cards flex items-stretch sm:items-center gap-4 sm:gap-0 justify-center mt-4 sm:mt-8 flex-col sm:flex-row sm:py-10 sm:overflow-hidden w-full shrink-0 z-10 sm:z-30"
                 id="cards"
             >
                 <div
@@ -109,7 +109,7 @@ import Logo from "./Logo.astro";
                 >
                 </div>
                 <picture
-                    class="absolute -bottom-[240px] sm:-bottom-[180px] left-0 right-0 w-full h-[680px] pointer-events-none z-0 overflow-hidden"
+                    class="absolute -bottom-[240px] sm:-bottom-[180px] left-0 right-0 w-full h-[calc(100vh+240px)] sm:h-[680px] pointer-events-none z-0 overflow-hidden"
                 >
                     <source srcset="/Head@2x.avif" type="image/avif" />
                     <source srcset="/Head@2x.webp" type="image/webp" />
@@ -140,7 +140,7 @@ import Logo from "./Logo.astro";
             </div>
             <div class="w-full z-0 relative pointer-events-none">
                 <div
-                    class="absolute h-[clamp(var(--min-height),100vh,var(--max-height))] bottom-0 w-full overflow-hidden"
+                    class="absolute h-[clamp(var(--min-height),100vh,var(--max-height))] bottom-0 max-sm:-mx-4 max-sm:w-[calc(100%+var(--spacing)*8)] sm:w-full overflow-hidden"
                     id="tail"
                 >
                     <svg
