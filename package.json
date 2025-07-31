@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "build:silent": "astro build --silent",
     "preview": "astro preview",
     "astro": "astro"
   },
