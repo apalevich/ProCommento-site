@@ -7,7 +7,6 @@
     src: local("Arial");
 }
 
-
 @theme {
     --font-sans: 'Inter Variable', 'Inter-fallback', 'sans-serif';
     --color-card: hsla(0, 0%, 100%, 1);
