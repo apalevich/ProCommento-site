@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 @font-face {
-    font-family: 'Inter-fallback';
-    size-adjust: 107.00%;
+    font-family: "Inter-fallback";
+    size-adjust: 107%;
     ascent-override: 91%;
     src: local("Arial");
 }
 
 @theme {
-    --font-sans: 'Inter Variable', 'Inter-fallback', 'sans-serif';
+    --font-sans: "Inter Variable", "Inter-fallback", "sans-serif";
     --color-card: hsla(0, 0%, 100%, 1);
     --color-main: hsla(0, 0%, 7%, 1);
     --color-foreground: hsla(0, 0%, 100%, 1);
