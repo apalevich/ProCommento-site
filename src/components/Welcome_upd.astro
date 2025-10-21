@@ -1,0 +1,848 @@
+---
+import Logo from "./Logo.astro";
+---
+
+<div
+    id="container"
+    class="root h-full text-foreground overflow-auto mx-auto max-w-7xl"
+>
+    <div class="h-full relative sm:overflow-hidden sm:min-h-fit">
+        <!-- Hero -->
+        <section
+            id="hero"
+            class="relative overflow-hidden bg-gradient-to-b from-zinc-900 via-black to-zinc-950 text-white"
+        >
+            <div
+                class="px-6 header py-6 sm:py-8 sm:px-20 flex items-center justify-between w-full relative"
+            >
+                <Logo />
+                <div class="hidden sm:block text-foreground-soft text-2xl">
+                    Stay tuned on <a
+                        href="https://www.linkedin.com/company/procommento/?viewAsMember=true"
+                        target="_blank"
+                        class="text-primary underline">LinkedIn</a
+                    >
+                </div>
+            </div>
+            <div
+                class="px-6 pb-24 md:py-28 lg:py-32 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+            >
+                <div class="space-y-6">
+                    <h1
+                        class="text-4xl/tight md:text-5xl/tight font-extrabold tracking-tight"
+                    >
+                        Land jobs or clients on LinkedIn — by commenting daily
+                    </h1>
+                    <p class="text-zinc-300 text-lg md:text-xl">
+                        ProCommento turns daily comments into warm contacts:
+                        curated posts from your field, an AI draft in your
+                        voice, and a clear progress streak.
+                    </p>
+                    <div class="flex flex-wrap gap-3">
+                        <!-- <a
+                            href="#start"
+                            class="inline-flex items-center justify-center rounded-2xl bg-primary text-white px-5 py-3 font-semibold shadow hover:shadow-lg active:translate-y-px"
+                        >
+                            Start 5‑day trial
+                            <span
+                                class="ml-2 text-xs font-medium rounded bg-zinc-900 text-zinc-200 px-2 py-0.5"
+                                >no card</span
+                            >
+                        </a> -->
+                        <a
+                            href="https://procommen.to"
+                            target="_blank"
+                            id="linkToApp"
+                            class="font-semibold relative flex items-center justify-center gap-3 rounded-full typography-body-s--bold md:typography-body-m--bold whitespace-nowrap bg-primary text-on-primary hover:bg-primary--hover disabled:bg-primary/40 py-3.5 px-6"
+                        >
+                            Start 5‑day trial
+                            <span
+                                class="ml-2 text-xs font-medium rounded bg-zinc-900 text-zinc-200 px-2 py-0.5"
+                                >no card</span
+                            >
+                        </a>
+                        <!-- <a
+                            href="#demo"
+                            class="inline-flex items-center justify-center rounded-2xl ring-1 ring-inset ring-zinc-600 px-5 py-3 font-semibold text-white hover:bg-zinc-800/60"
+                        >
+                            Watch demo
+                        </a> -->
+                    </div>
+                    <div class="flex items-center gap-8 pt-4">
+                        <div class="flex -space-x-2">
+                            <img
+                                src="https://api.iconify.design/lucide:message-square.svg?color=white"
+                                alt="comments"
+                                class="size-8 opacity-75"
+                            />
+                            <img
+                                src="https://api.iconify.design/lucide:target.svg?color=white"
+                                alt="target"
+                                class="size-8 opacity-50"
+                            />
+                            <img
+                                src="https://api.iconify.design/lucide:trophy.svg?color=white"
+                                alt="trophy"
+                                class="size-8 opacity-25"
+                            />
+                        </div>
+                        <p class="text-sm text-zinc-400">
+                            Built for seekers, founders, consultants, and B2B
+                            sales.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Progress ring + streak visual -->
+                <div class="justify-self-center lg:justify-self-end pt-12">
+                    <div class="relative size-64 md:size-72">
+                        <svg
+                            class="absolute inset-0"
+                            viewBox="0 0 120 120"
+                            role="img"
+                            aria-label="Daily progress"
+                        >
+                            <circle
+                                cx="60"
+                                cy="60"
+                                r="52"
+                                fill="none"
+                                stroke="rgba(255,255,255,0.08)"
+                                stroke-width="12"></circle>
+                            <!-- 60% progress demo -->
+                            <circle
+                                cx="60"
+                                cy="60"
+                                r="52"
+                                fill="none"
+                                stroke="white"
+                                stroke-linecap="round"
+                                stroke-width="12"
+                                stroke-dasharray="327"
+                                stroke-dashoffset="131"
+                                transform="rotate(-90 60 60)"></circle>
+                        </svg>
+                        <div
+                            class="absolute inset-0 grid place-items-center text-center"
+                        >
+                            <div>
+                                <div class="text-4xl font-extrabold">
+                                    3<span class="text-zinc-400">/</span>5
+                                </div>
+                                <div class="text-sm text-zinc-400">
+                                    Today’s comments
+                                </div>
+                                <div
+                                    class="mt-3 inline-flex items-center rounded-full bg-white/10 px-3 py-1 text-xs text-zinc-200 ring-1 ring-inset ring-white/20"
+                                >
+                                    Streak: <span class="ml-1 font-semibold"
+                                        >7 days</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits -->
+        <section id="benefits" class="bg-black text-white">
+            <div
+                class="mx-auto max-w-7xl px-6 py-16 md:py-20 cards flex items-stretch sm:items-center gap-4 sm:gap-0 justify-center mt-4 sm:mt-8 flex-col sm:flex-row sm:py-10 sm:overflow-hidden w-full shrink-0 z-10 sm:z-30"
+            >
+                <div
+                    class="text-xl sm:w-[268px] gap-3 flex flex-col bg-card text-foreground-inverted rounded-card p-6 sm:rotate-[9.49deg] card-shadow shrink-0"
+                >
+                    <div class="text-3xl">📊</div>
+                    <div>
+                        <p class="font-bold">Your comment dashboard</p>
+                        <p class="text-foreground-soft-inverted text-xl">
+                            View the last comments for 24h, week, or month. Sort
+                            by time, reactions, or replies.
+                        </p>
+                        <p class="mt-4 text-xs text-zinc-500">
+                            Top hits are highlighted.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="text-xl sm:w-[268px] gap-3 flex flex-col bg-card text-foreground-inverted rounded-card p-6 sm:rotate-[-12.56deg] card-shadow shrink-0"
+                >
+                    <div class="text-3xl">😎</div>
+                    <div>
+                        <p class="font-bold">Comment like a Pro</p>
+                        <p class="text-foreground-soft-inverted text-xl">
+                            By yourself or get a smart draft that sounds like
+                            you.
+                        </p>
+                        <p class="mt-4 text-xs text-zinc-500">
+                            Personalized with your LinkedIn profile.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="text-xl sm:w-[268px] gap-3 flex flex-col bg-card text-foreground-inverted rounded-card p-6 sm:rotate-[-12.49deg] card-shadow shrink-0"
+                    id="last-card"
+                >
+                    <div class="flex items-center justify-between text-3xl">
+                        🔥
+                    </div>
+                    <div>
+                        <p class="font-bold">Progress & streak</p>
+                        <p class="text-foreground-soft-inverted text-xl">
+                            Set a daily comment goal and keep your streak alive.
+                        </p>
+                        <!-- <p class="mt-4 text-xs text-zinc-500">
+                            Badges: First Five, Week Warrior, Reply Magnet.
+                        </p> -->
+                    </div>
+                </div>
+                <div
+                    class="text-xl sm:w-[268px] gap-3 flex flex-col bg-card text-foreground-inverted rounded-card p-6 sm:rotate-[11.17deg] card-shadow shrink-0"
+                >
+                    <div class="text-3xl">🎯</div>
+                    <div>
+                        <p class="font-bold">Today’s target list</p>
+                        <p class="text-foreground-soft-inverted text-xl">
+                            Fresh posts from your industry. One click opens the
+                            post to comment.
+                        </p>
+                        <p class="mt-4 text-xs text-zinc-500">Coming soon.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- How it works -->
+            <section
+                id="how"
+                class="bg-gradient-to-b from-black to-zinc-950 text-white"
+            >
+                <div class="mx-auto max-w-7xl px-6 py-16 md:py-20">
+                    <h2
+                        class="text-3xl md:text-4xl font-extrabold tracking-tight"
+                    >
+                        How it works
+                    </h2>
+                    <div class="mt-8 grid gap-6 md:grid-cols-3">
+                        <div
+                            class="rounded-3xl bg-zinc-900/60 ring-1 ring-inset ring-white/10 p-6"
+                        >
+                            <div class="text-sm font-semibold text-zinc-400">
+                                Step 1
+                            </div>
+                            <h3 class="mt-2 text-xl font-semibold">
+                                Get recommendations
+                            </h3>
+                            <p class="mt-2 text-zinc-300 text-sm">
+                                We find fresh posts from creators in your field.
+                                Open in a new tab or send the link to the AI
+                                generator.
+                            </p>
+                        </div>
+                        <div
+                            class="rounded-3xl bg-zinc-900/60 ring-1 ring-inset ring-white/10 p-6"
+                        >
+                            <div class="text-sm font-semibold text-zinc-400">
+                                Step 2
+                            </div>
+                            <h3 class="mt-2 text-xl font-semibold">Comment</h3>
+                            <p class="mt-2 text-zinc-300 text-sm">
+                                Write it yourself or use the AI draft tuned to
+                                your profile. Add value to the thread and be
+                                seen by the right people.
+                            </p>
+                        </div>
+                        <div
+                            class="rounded-3xl bg-zinc-900/60 ring-1 ring-inset ring-white/10 p-6"
+                        >
+                            <div class="text-sm font-semibold text-zinc-400">
+                                Step 3
+                            </div>
+                            <h3 class="mt-2 text-xl font-semibold">
+                                Track impact
+                            </h3>
+                            <p class="mt-2 text-zinc-300 text-sm">
+                                Scan your comment feed, reactions, and replies.
+                                Mark the top hits and repeat what works.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gamification -->
+            <section id="game" class="bg-black text-white">
+                <div class="mx-auto max-w-7xl px-6 py-16 md:py-20">
+                    <h2
+                        class="text-3xl md:text-4xl font-extrabold tracking-tight"
+                    >
+                        Gamification & rewards 🕹️
+                    </h2>
+                    <p class="mt-3 text-zinc-300">
+                        Keep your streak, hit the daily goal, and unlock badges.
+                    </p>
+                    <div class="mt-8 grid gap-6 grid-cols-2 lg:grid-cols-4">
+                        <div
+                            class="rounded-3xl bg-zinc-900/60 ring-1 ring-inset ring-white/10 p-6"
+                        >
+                            <h3 class="font-semibold">
+                                First<br class="sm:hidden" />Five
+                            </h3>
+                            <p class="mt-2 text-sm text-zinc-300">
+                                Your first five thoughtful comments.
+                            </p>
+                        </div>
+                        <div
+                            class="rounded-3xl bg-zinc-900/60 ring-1 ring-inset ring-white/10 p-6"
+                        >
+                            <h3 class="font-semibold">Week Warrior</h3>
+                            <p class="mt-2 text-sm text-zinc-300">
+                                Seven days without skipping.
+                            </p>
+                        </div>
+                        <div
+                            class="rounded-3xl bg-zinc-900/60 ring-1 ring-inset ring-white/10 p-6"
+                        >
+                            <h3 class="font-semibold">Reply Magnet</h3>
+                            <p class="mt-2 text-sm text-zinc-300">
+                                A comment with the most replies.
+                            </p>
+                        </div>
+                        <div
+                            class="rounded-3xl bg-zinc-900/60 ring-1 ring-inset ring-white/10 p-6"
+                        >
+                            <h3 class="font-semibold">Industry Insider</h3>
+                            <p class="mt-2 text-sm text-zinc-300">
+                                Comments under leaders in your niche.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Why it works -->
+            <section
+                id="why"
+                class="bg-gradient-to-b from-zinc-950 to-black text-white"
+            >
+                <div class="mx-auto max-w-7xl px-6 py-16 md:py-20">
+                    <h2
+                        class="text-3xl md:text-4xl font-extrabold tracking-tight"
+                    >
+                        Why it works ⚓️
+                    </h2>
+                    <ul class="mt-6 grid gap-3 text-zinc-300">
+                        <li class="flex gap-3">
+                            <span class="mt-1 size-2 rounded-full bg-white/80"
+                            ></span><span
+                                >Visibility to the right audience without daily
+                                posting</span
+                            >
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="mt-1 size-2 rounded-full bg-white/80"
+                            ></span><span
+                                >Easy entry into conversations with key creators</span
+                            >
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="mt-1 size-2 rounded-full bg-white/80"
+                            ></span><span
+                                >Fast feedback: likes, replies, invites</span
+                            >
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="mt-1 size-2 rounded-full bg-white/80"
+                            ></span><span
+                                >Clear metrics — how many you did today or this
+                                week or this month</span
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Personalization -->
+            <section id="personalization" class="bg-black text-white">
+                <div
+                    class="mx-auto max-w-7xl px-6 py-16 md:py-20 grid gap-10 lg:grid-cols-2"
+                >
+                    <div>
+                        <h2
+                            class="text-3xl md:text-4xl font-extrabold tracking-tight"
+                        >
+                            Personalized to your profile 👨‍🔬
+                        </h2>
+                        <p class="mt-4 text-zinc-300">
+                            Add your LinkedIn profile once. We tailor post
+                            recommendations and the AI tone to your experience
+                            and goals.
+                        </p>
+                    </div>
+                    <div
+                        class="rounded-3xl bg-zinc-900/60 ring-1 ring-inset ring-white/10 p-6"
+                    >
+                        <h3 class="font-semibold">What’s personalized</h3>
+                        <ul class="mt-3 space-y-2 text-sm text-zinc-300">
+                            <li>Industries and topics you follow.</li>
+                            <li>Draft tone and depth for your seniority.</li>
+                            <li>Authors most relevant to your network.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Who it's for -->
+            <section
+                id="who"
+                class="bg-gradient-to-b from-black to-zinc-950 text-white"
+            >
+                <div class="mx-auto max-w-7xl px-6 py-16 md:py-20">
+                    <h2
+                        class="text-3xl md:text-4xl font-extrabold tracking-tight"
+                    >
+                        Who it’s for 🏃
+                    </h2>
+                    <div class="mt-8 grid gap-6 md:grid-cols-3">
+                        <div
+                            class="rounded-3xl bg-zinc-900/60 ring-1 ring-inset ring-white/10 p-6"
+                        >
+                            <h3 class="font-semibold">Active job seeker</h3>
+                            <p class="mt-2 text-sm text-zinc-300">
+                                Get into the conversation and surface faster.
+                            </p>
+                        </div>
+                        <div
+                            class="rounded-3xl bg-zinc-900/60 ring-1 ring-inset ring-white/10 p-6"
+                        >
+                            <h3 class="font-semibold">
+                                Freelancer or consultant
+                            </h3>
+                            <p class="mt-2 text-sm text-zinc-300">
+                                Turn comments into leads and intro calls.
+                            </p>
+                        </div>
+                        <div
+                            class="rounded-3xl bg-zinc-900/60 ring-1 ring-inset ring-white/10 p-6"
+                        >
+                            <h3 class="font-semibold">Founder / B2B sales</h3>
+                            <p class="mt-2 text-sm text-zinc-300">
+                                Reach decision‑makers through valuable replies.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Activity sample -->
+            <section id="activity" class="bg-black text-white hidden">
+                <div class="mx-auto max-w-7xl px-6 py-16 md:py-20">
+                    <div class="flex items-end justify-between gap-6">
+                        <div>
+                            <h2
+                                class="text-3xl md:text-4xl font-extrabold tracking-tight"
+                            >
+                                Your activity
+                            </h2>
+                            <p class="mt-2 text-zinc-300">
+                                Last 24h • 8 comments • 3 top hits • 2 author
+                                replies
+                            </p>
+                        </div>
+                        <div class="hidden md:flex gap-2">
+                            <button
+                                class="rounded-full px-4 py-2 text-sm bg-white text-black font-semibold"
+                                >24h</button
+                            >
+                            <button
+                                class="rounded-full px-4 py-2 text-sm ring-1 ring-inset ring-white/20"
+                                >Week</button
+                            >
+                            <button
+                                class="rounded-full px-4 py-2 text-sm ring-1 ring-inset ring-white/20"
+                                >Month</button
+                            >
+                        </div>
+                    </div>
+
+                    <div class="mt-6 grid gap-4 md:grid-cols-2">
+                        <!-- Comment card example -->
+                        <article
+                            class="rounded-3xl bg-zinc-900/60 ring-1 ring-inset ring-white/10 p-5"
+                        >
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-semibold">
+                                    Comment to Jane Doe
+                                </h3>
+                                <span
+                                    class="inline-flex items-center rounded-full bg-amber-400/20 text-amber-200 text-xs px-2 py-0.5 ring-1 ring-inset ring-amber-300/30"
+                                    >Top</span
+                                >
+                            </div>
+                            <p class="mt-2 text-sm text-zinc-300">
+                                Shared a concise playbook for faster onboarding.
+                                Got a follow‑up question from the author.
+                            </p>
+                            <div class="mt-3 text-xs text-zinc-400">
+                                12 reactions • 4 replies • 2h ago
+                            </div>
+                        </article>
+
+                        <article
+                            class="rounded-3xl bg-zinc-900/60 ring-1 ring-inset ring-white/10 p-5"
+                        >
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-semibold">
+                                    Comment to Alex Smith
+                                </h3>
+                            </div>
+                            <p class="mt-2 text-sm text-zinc-300">
+                                Clarified ROI metrics for a case study and
+                                suggested a simple KPI ladder.
+                            </p>
+                            <div class="mt-3 text-xs text-zinc-400">
+                                7 reactions • 1 reply • 5h ago
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ -->
+            <section
+                id="faq"
+                class="bg-gradient-to-b from-zinc-950 to-black text-white"
+            >
+                <div class="mx-auto max-w-4xl px-6 pt-16 pb-32 md:py-20">
+                    <h2
+                        class="text-3xl md:text-4xl font-extrabold tracking-tight"
+                    >
+                        FAQ 🤔
+                    </h2>
+                    <div class="mt-8 space-y-4">
+                        <details
+                            class="group rounded-2xl bg-zinc-900/60 ring-1 ring-inset ring-white/10 p-5 open:shadow-lg"
+                        >
+                            <summary
+                                class="cursor-pointer font-semibold list-none"
+                                >Do you need access to my LinkedIn?</summary
+                            >
+                            <p class="mt-2 text-zinc-300 text-sm">
+                                No. A link to your profile is enough — once at
+                                sign‑up
+                            </p>
+                        </details>
+                        <details
+                            class="group rounded-2xl bg-zinc-900/60 ring-1 ring-inset ring-white/10 p-5"
+                        >
+                            <summary
+                                class="cursor-pointer font-semibold list-none"
+                                >How does the AI generator work?</summary
+                            >
+                            <p class="mt-2 text-zinc-300 text-sm">
+                                Paste a post link and get a draft that sounds
+                                like you. Edit freely before posting
+                            </p>
+                        </details>
+                        <details
+                            class="group rounded-2xl bg-zinc-900/60 ring-1 ring-inset ring-white/10 p-5"
+                        >
+                            <summary
+                                class="cursor-pointer font-semibold list-none"
+                                >Mobile friendly?</summary
+                            >
+                            <p class="mt-2 text-zinc-300 text-sm">
+                                Yes. ProCommento works great on phones and
+                                desktops
+                            </p>
+                        </details>
+                        <details
+                            class="group rounded-2xl bg-zinc-900/60 ring-1 ring-inset ring-white/10 p-5"
+                        >
+                            <summary
+                                class="cursor-pointer font-semibold list-none"
+                                >Pricing?</summary
+                            >
+                            <p class="mt-2 text-zinc-300 text-sm">
+                                Start with a 5‑day trial without a card. Choose
+                                a plan inside the app, starts from €11
+                            </p>
+                        </details>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Final CTA -->
+            <!-- <section id="start" class="bg-black text-white">
+                <div class="mx-auto max-w-3xl px-6 py-16 md:py-20 text-center">
+                    <h2
+                        class="text-3xl md:text-4xl font-extrabold tracking-tight"
+                    >
+                        Make five thoughtful comments today.
+                    </h2>
+                    <p class="mt-3 text-zinc-300">
+                        Check what changes in a week.
+                    </p>
+                    <div class="mt-6 flex justify-center gap-3">
+                        <a
+                            href="https://procommen.to"
+                            target="_blank"
+                            class="inline-flex items-center justify-center rounded-2xl bg-white text-black px-6 py-3 font-semibold shadow hover:shadow-lg active:translate-y-px"
+                            >Start 5‑day trial</a
+                        >
+                        <a
+                            id="demo"
+                            href="#demo"
+                            class="inline-flex items-center justify-center rounded-2xl ring-1 ring-inset ring-zinc-600 px-6 py-3 font-semibold"
+                            >Watch demo</a
+                        >
+                    </div>
+                </div>
+            </section> -->
+            <section>
+                <div
+                    class="sticky max-sm:bottom-10 max-sm:w-[calc(100%+var(--spacing)*8)] max-sm:mt-64 max-sm:-mx-4 sm:w-full sm:block sm:relative sm:pb-18 sm:mt-auto z-20"
+                >
+                    <div
+                        class="bg-[#5362F6] w-[280px] h-[180px] left-1/2 top-1/2 sm:top-1/3 -translate-1/2 absolute blur-xl sm:blur-2xl rounded-full"
+                    >
+                    </div>
+                    <picture
+                        class="absolute -bottom-[240px] sm:-bottom-[180px] left-0 right-0 w-full h-[calc(100vh+240px)] sm:h-[680px] pointer-events-none z-0 overflow-hidden"
+                    >
+                        <source srcset="/Head@2x.avif" type="image/avif" />
+                        <source srcset="/Head@2x.webp" type="image/webp" />
+                        <source srcset="/Head@2x.png" type="image/png" />
+                        <img
+                            src="/Head@2x.avif"
+                            alt=""
+                            id="head"
+                            class="wide absolute max-w-none w-[600px] bottom-0 left-1/2 -translate-x-1/2"
+                        />
+                    </picture>
+                    <a
+                        href="https://procommen.to"
+                        target="_blank"
+                        id="linkToApp"
+                        class="flex flex-col items-center gap-4 max-w-[230px] text-center mx-auto relative app-link z-10"
+                    >
+                        <span class="text-2xl font-extrabold relative"
+                            >Make five thoughtful comments today.</span
+                        >
+                        <!-- <span class="text-xl relative">Start now</span> -->
+                    </a>
+                    <div
+                        class="max-sm:hidden z-0 w-[180px] h-[180px] left-1/2 top-1/2 sm:top-1/3 -translate-1/2 absolute blur-xl sm:blur-2xl rounded-full head-hover-gradient"
+                    >
+                    </div>
+                </div>
+                <div class="w-full z-0 relative pointer-events-none">
+                    <div
+                        class="absolute h-[clamp(var(--min-height),100vh,var(--max-height))] bottom-0 max-sm:-mx-4 max-sm:w-[calc(100%+var(--spacing)*8)] sm:w-full overflow-hidden"
+                        id="tail"
+                    >
+                        <svg
+                            class="relative h-full w-[600px] left-1/2 -translate-x-1/2"
+                            viewBox="0 500 589 972"
+                            preserveAspectRatio="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g filter="url(#filter0_f_26_8)">
+                                <path
+                                    d="M274.503 110.826C276.714 96.4837 297.331 96.3529 299.724 110.666L489 1242.93H100L274.503 110.826Z"
+                                    fill="url(#paint0_linear_26_8)"></path>
+                            </g>
+                            <g filter="url(#filter1_f_26_8)">
+                                <path
+                                    d="M278.634 534.392C280.327 523.407 296.118 523.307 297.95 534.27L442.919 1401.48H144.98L278.634 534.392Z"
+                                    fill="url(#paint1_linear_26_8)"></path>
+                            </g>
+                            <g filter="url(#filter2_fn_26_8)">
+                                <path
+                                    d="M285.777 581.323C286.485 572.523 299.36 572.479 300.127 581.274L364.96 1324.92H226L285.777 581.323Z"
+                                    fill="url(#paint2_linear_26_8)"></path>
+                            </g>
+                            <defs>
+                                <filter
+                                    id="filter0_f_26_8"
+                                    x="0"
+                                    y="0"
+                                    width="589"
+                                    height="1342.93"
+                                    filterUnits="userSpaceOnUse"
+                                    color-interpolation-filters="sRGB"
+                                >
+                                    <feFlood
+                                        flood-opacity="0"
+                                        result="BackgroundImageFix"></feFlood>
+                                    <feBlend
+                                        mode="normal"
+                                        in="SourceGraphic"
+                                        in2="BackgroundImageFix"
+                                        result="shape"></feBlend>
+                                    <feGaussianBlur
+                                        stdDeviation="50"
+                                        result="effect1_foregroundBlur_26_8"
+                                    ></feGaussianBlur>
+                                </filter>
+                                <filter
+                                    id="filter1_f_26_8"
+                                    x="74.9805"
+                                    y="456.101"
+                                    width="437.938"
+                                    height="1015.38"
+                                    filterUnits="userSpaceOnUse"
+                                    color-interpolation-filters="sRGB"
+                                >
+                                    <feFlood
+                                        flood-opacity="0"
+                                        result="BackgroundImageFix"></feFlood>
+                                    <feBlend
+                                        mode="normal"
+                                        in="SourceGraphic"
+                                        in2="BackgroundImageFix"
+                                        result="shape"></feBlend>
+                                    <feGaussianBlur
+                                        stdDeviation="35"
+                                        result="effect1_foregroundBlur_26_8"
+                                    ></feGaussianBlur>
+                                </filter>
+                                <filter
+                                    id="filter2_fn_26_8"
+                                    x="126"
+                                    y="474.7"
+                                    width="338.96"
+                                    height="950.215"
+                                    filterUnits="userSpaceOnUse"
+                                    color-interpolation-filters="sRGB"
+                                >
+                                    <feFlood
+                                        flood-opacity="0"
+                                        result="BackgroundImageFix"></feFlood>
+                                    <feBlend
+                                        mode="normal"
+                                        in="SourceGraphic"
+                                        in2="BackgroundImageFix"
+                                        result="shape"></feBlend>
+                                    <feGaussianBlur
+                                        stdDeviation="35"
+                                        result="effect1_foregroundBlur_26_8"
+                                    ></feGaussianBlur>
+                                    <feTurbulence
+                                        type="fractalNoise"
+                                        baseFrequency="1.6858237981796265 1.6858237981796265"
+                                        stitchTiles="stitch"
+                                        numOctaves="3"
+                                        result="noise"
+                                        seed="4461"></feTurbulence>
+                                    <feColorMatrix
+                                        in="noise"
+                                        type="luminanceToAlpha"
+                                        result="alphaNoise"></feColorMatrix>
+                                    <feComponentTransfer
+                                        in="alphaNoise"
+                                        result="coloredNoise1"
+                                    >
+                                        <feFuncA
+                                            type="discrete"
+                                            tableValues="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 "
+                                        ></feFuncA>
+                                    </feComponentTransfer>
+                                    <feComposite
+                                        operator="in"
+                                        in2="effect1_foregroundBlur_26_8"
+                                        in="coloredNoise1"
+                                        result="noise1Clipped"></feComposite>
+                                    <feFlood
+                                        flood-color="rgba(0, 0, 0, 0.25)"
+                                        result="color1Flood"></feFlood>
+                                    <feComposite
+                                        operator="in"
+                                        in2="noise1Clipped"
+                                        in="color1Flood"
+                                        result="color1"></feComposite>
+                                    <feMerge result="effect2_noise_26_8">
+                                        <feMergeNode
+                                            in="effect1_foregroundBlur_26_8"
+                                        ></feMergeNode>
+                                        <feMergeNode in="color1"></feMergeNode>
+                                    </feMerge>
+                                </filter>
+                                <linearGradient
+                                    id="paint0_linear_26_8"
+                                    x1="294.5"
+                                    y1="100"
+                                    x2="294.5"
+                                    y2="1242.93"
+                                    gradientUnits="userSpaceOnUse"
+                                >
+                                    <stop stop-color="#3639CC" stop-opacity="0"
+                                    ></stop>
+                                    <stop
+                                        offset="1"
+                                        stop-color="#3639CC"
+                                        stop-opacity="0.4"></stop>
+                                </linearGradient>
+                                <linearGradient
+                                    id="paint1_linear_26_8"
+                                    x1="293.95"
+                                    y1="526.101"
+                                    x2="293.95"
+                                    y2="1401.48"
+                                    gradientUnits="userSpaceOnUse"
+                                >
+                                    <stop stop-color="#3652CC" stop-opacity="0"
+                                    ></stop>
+                                    <stop
+                                        offset="0.8"
+                                        stop-color="#3652CC"
+                                        stop-opacity="0.3"></stop>
+                                    <stop offset="1" stop-color="#3652CC"
+                                    ></stop>
+                                </linearGradient>
+                                <linearGradient
+                                    id="paint2_linear_26_8"
+                                    x1="295.48"
+                                    y1="574.7"
+                                    x2="295.48"
+                                    y2="1324.92"
+                                    gradientUnits="userSpaceOnUse"
+                                >
+                                    <stop stop-color="#3F7DE2" stop-opacity="0"
+                                    ></stop>
+                                    <stop
+                                        offset="0.5"
+                                        stop-color="#3F7DE2"
+                                        stop-opacity="0.6"></stop>
+                                    <stop offset="1" stop-color="#3F7DE2"
+                                    ></stop>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+                <div
+                    class="sm:hidden text-foreground-soft text-xl pb-10 pt-32 relative text-center"
+                >
+                    Follow us on <a
+                        href="https://www.linkedin.com/company/procommento/?viewAsMember=true"
+                        target="_blank"
+                        class="text-primary underline">LinkedIn</a
+                    >
+                </div>
+            </section>
+        </section>
+    </div>
+</div>
+
+<script>
+    // UTM transporter
+    const url = new URL(document.location.href);
+    const urlParams = url.search;
+    const linkToApp: HTMLLinkElement | null =
+        document.querySelector("a#linkToApp");
+    if (linkToApp) {
+        linkToApp.href += urlParams;
+    }
+</script>
